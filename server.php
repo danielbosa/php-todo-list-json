@@ -23,7 +23,7 @@ if(isset($_POST['id'])) {
     $todoJson = json_encode($todo, JSON_PRETTY_PRINT);
 
     //scrivo file
-    file_put_contents('data.json', $todoJson);
+    file_put_contents('js/data.json', $todoJson);
 }
 
 header("Content-Type: application/json");
